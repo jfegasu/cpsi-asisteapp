@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<br><br><br>
+
+<div class="container w-50 p-6 content-align:center">
+<!--<div class="col-sm-12 col-md-4 col-lg-6 col-xl-4">-->
+
+    <table width="100%">
+        <td colspan=2 valign="top"><img loading="lazy" class="tabla" src="{{url_for('static',filename='images/sinsonte2.png')}}" style="border:true;width:50px;border-radius: 25px;height:50px;"></td>
+
+      <td><h4 class="sena-sombra">&nbsp;&nbsp;&nbsp;CONDOMINIO PALMANOVA SINSONTE<br>&nbsp;&nbsp;&nbsp;CALLE 3 #2-111 VILLETA CUNDINAMARCA</h4></td></table>
+         
+    <form method="post" action="/v">
+        <table class="table table-md table-dark  table-striped-columns ">
+            <tr>
+                <td ><label class="form-label">Usuario:</label></td>
+                <td><input class="form-control" type="text" id="usua" title="Ingresar el usuario" name="usua" required></td>
+            </tr>
+            <tr>
+                <td><label class="form-label">Clave:</label></td>
+                <td><input class="form-control" type="password"  id="pw" name="pw"></td>
+            </tr>
+            
+        </table>
+        <center><input class="btn btn-outline-primary col-10" type="submit" value="Ingresar">
+    </form>
+</div>
+{% endblock content %}

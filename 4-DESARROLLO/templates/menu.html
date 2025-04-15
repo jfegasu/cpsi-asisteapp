@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<table>
+  <td colspan="2"><a href="/centro" target="centro"><img loading="lazy" class="tabla" src="{{url_for('static',filename='images/sinsonte2.png')}}" style="border:true;width:50px;border-radius: 25px;height:50px;border-style: outset;border:solid;"></a></td>
+  <td colspan="3"><h3 class="caret-sombra-red">&nbsp;&nbsp;{{titu}}-{{rol}}</h3><hr></td>
+</table>
+<!--https://fonts.google.com/icons?selected=Material+Symbols+Outlined:keyboard_command_key:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%231f1f1f-->
+
+<!-- <div class="sena-menu my-2 ">-->
+  <div class="sena-menu "> 
+    <br>
+{%for i in menus %}
+<a style="width:100%;text-align:left;" href="{{i[4]}}" target="{{i[5]}}"><i class="material-icons">{{i[6]}}</i>{{i[2]}}</a><br>
+{% endfor %}
+</ul>
+</div>
+</div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+{% endblock content %}
+

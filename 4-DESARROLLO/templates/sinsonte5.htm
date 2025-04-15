@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<center>
+<div class="sena" >
+  <div>
+<table border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+   <td><img src="spacer.gif" width="296" height="1" border="0" alt="" /></td>
+   <td><img src="spacer.gif" width="655" height="1" border="0" alt="" /></td>
+   <td><img src="spacer.gif" width="51" height="1" border="0" alt="" /></td>
+   <td><img src="spacer.gif" width="17" height="1" border="0" alt="" /></td>
+   <td><img src="spacer.gif" width="1" height="1" border="0" alt="" /></td>
+  </tr>
+
+  <tr>
+   <td colspan="4"><img name="sinsonte5_r1_c1" src="{{url_for('static',filename='images/img/sinsonte5_r1_c1.png')}}" width="1019" height="239" border="0" id="sinsonte5_r1_c1" alt="" /></td>
+   <td><img src="spacer.gif" width="1" height="239" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td rowspan="2" ><img name="sinsonte5_r2_c1" src="{{url_for('static',filename='images/img/sinsonte5_r2_c1.png')}}" width="296" height="295" border="0" id="sinsonte5_r2_c1" alt="" /></td>
+   <td class="sena-borde">
+    <table clase="p10 " width="90%" >
+             
+  <form method="post" action="/v">
+      <table class="table table-md table-dark table-striped-columns sena-borde" style="width:90%;">
+          <tr>
+              <td ><label class="form-label">Usuario:</label></td>
+              <td><input class="form-control" type="text" id="usua" title="Ingresar el usuario" name="usua" required></td>
+          </tr>
+          <tr>
+              <td><label class="form-label">Clave:</label></td>
+              <td><input class="form-control" type="password"  id="pw" name="pw"></td>
+          </tr>        
+      </table><br><br>
+      <input class="btn btn-success" style='width:90%;' type="submit" value="Ingresar">
+  </form>
+
+   </td>
+   <td rowspan="2" colspan="2"><img name="sinsonte5_r2_c3" src="{{url_for('static',filename='images/img/sinsonte5_r2_c3.png')}}" width="68" height="295" border="0" id="sinsonte5_r2_c3" alt="" /></td>
+   <td><img src="spacer.gif" width="1" height="193" border="0" alt="" /></td>
+  </tr>
+  <tr>
+   <td><img name="sinsonte5_r3_c2" src="{{url_for('static',filename='images/img/sinsonte5_r3_c2.png')}}" width="655" height="102" border="0" id="sinsonte5_r3_c2" alt="" /></td>
+   <td><img src="spacer.gif" width="1" height="102" border="0" alt="" /></td>
+  </tr>
+</table>
+  </div>
+</div>
+<br>
+{%endblock%}
+</html>

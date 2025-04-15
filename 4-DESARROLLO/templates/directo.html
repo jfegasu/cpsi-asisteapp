@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<script>
+    function Voy(){
+    {% if regreso%}
+    window.open("{{regreso}}","{{centro}}");
+    {% else %}
+    window.open("/","centro");
+    {% endif %}
+    }
+    setTimeout('Voy()',30)
+</script>
+{% endblock content %}
+    

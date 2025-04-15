@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+{%if nivel==0 %}
+
+<table class="table table-bordered">
+{% for x in vcol%}
+        <th style="background-color: greenyellow;color: red;">{{x}}</th>
+{%endfor%}
+<th style="background-color: greenyellow;color: red;">Funciones</th>
+        <tbody>
+            {%for x in aa%}
+            <TR>
+                {%for y in range(i)%}
+                <td>{{x[y+despla]}}</td> 
+                {%endfor%}
+                <td>
+                <a href="/admin/e/{{x[confi[0]['key']]}}" title="{{confi[0]['titu']}}"><i class="material-icons">{{confi[0]['icono']}}</i></a>
+                    <a href="/admin/d/{{x[confi[0]['key']]}}" title="{{confi[1]['titu']}}"><i class="material-icons">{{confi[1]['icono']}}</i></a>
+                    <a href="/admin/a/{{x[confi[0]['key']]}}" title="{{confi[2]['titu']}}"><i class="material-icons">{{confi[2]['icono']}}</i></a>
+                </td>
+                    
+            </TR>
+        </TR>
+        {%endfor%}
+
+        </tbody>
+
+</table>
+{%endif%}
+{% endblock content %}
